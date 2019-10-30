@@ -1,18 +1,8 @@
 <div class="container">
-  <header class="header">ブログ一覧</header>
-    <nav class="menu">
-        <ul class="row">
-            <li class="col-md-4">top</li>
-            <li class="col-md-4">menu1</li>
-            <li class="col-md-4">menu2</li>
-        </ul>
-    </nav>
-
-<p><%= notice %></p>
 
 <table>
   <tr>
-    <th>内容</th>
+    <th>投稿一覧</th>
   </tr>
 
 <% @blogs.each do |blog| %>
@@ -26,7 +16,7 @@
 
 <% end %>
 </table>
-<%= link_to 'ブログ一覧画面にもどる', blogs_path %>
-<%= link_to '新しくブログを投稿する', new_blog_path %>
+<%= link_to 'ブログ一覧画面にもどる', blogs_path, class: 'btn btn-default'  %>
+<%= link_to '新しくブログを投稿する', new_blog_path, class: 'btn btn-default'  %>
 
 </div>
